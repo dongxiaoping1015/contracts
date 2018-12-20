@@ -39,7 +39,7 @@ public class ContactRepository {
 
     public void save(Contact contact) {
         jdbc.update(
-                "INSERT INTO contracts " +
+                "INSERT INTO contacts " +
                         "(firstName, lastName, phoneNumber, emailAddress) " +
                         "VALUES (?, ?, ?, ?)",
                 contact.getFirstName(), contact.getLastName(),
