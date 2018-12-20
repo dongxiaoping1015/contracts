@@ -20,7 +20,7 @@ public class ContactRepository {
 
     public List<Contact> findAll() {
         return jdbc.query(
-                "select id, firstName, lastName, phoneName, emailAddress " +
+                "select id, firstName, lastName, phoneNumber,emailAddress " +
                         "from contacts order by lastName",
                 new RowMapper<Contact>() {
                     @Override

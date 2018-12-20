@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html xml:th="http://www.thymeleaf.org" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Spring Boot Contracts</title>
-    <link rel="stylesheet" th:href="@{/style.css}">
+    <link rel="stylesheet" th:href="@{/style.css}" />
 </head>
 <body>
     <h2>Spring Boot Contracts</h2>
     <form method="post">
         <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" /></form><br/>
+        <input type="text" id="firstName" name="firstName" /><br/>
         <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" /></form><br/>
+        <input type="text" id="lastName" name="lastName" /><br/>
         <label for="phoneNumber">Phone #:</label>
-        <input type="text" id="phoneNumber" name="phoneNumber" /></form><br/>
+        <input type="text" id="phoneNumber" name="phoneNumber" /><br/>
         <label for="emailAddress">Email:</label>
-        <input type="text" id="emailAddress" name="emailAddress" /></form><br/>
+        <input type="text" id="emailAddress" name="emailAddress" /><br/>
     </form>
 
     <ul th:each="contact : ${contacts}">
